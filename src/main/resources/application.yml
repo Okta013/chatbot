@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: chatbot
+  ai:
+    openai:
+      api-key: ${CHATGPT_API_KEY}
+      base-url: ${CHATGPT_BASE_URL:https://api.openai.com}
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USERNAME}
+    password: ${DATABASE_PASSWORD}
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+telegram:
+  token: ${TELEGRAM_BOT_TOKEN}
+  botName: ${TELEGRAM_BOT_NAME}
